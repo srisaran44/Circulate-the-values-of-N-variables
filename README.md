@@ -15,7 +15,19 @@ Using the slicing concept rotate the list
 ### Step 5: 
 ### Step 6: 
 ## Program:
-
+def circulate():
+    arr = eval(input())   # reads list like ['a','b','c','d','e','f']
+    k = int(input())
+    
+    n = len(arr)
+    k = k % n
+    
+    # left circulation
+    arr = arr[k:] + arr[:k]
+    
+    print("After circulating the values are:", arr)
 ## Output:
+<img width="1291" height="800" alt="image" src="https://github.com/user-attachments/assets/55ff4b95-d572-4f10-ba0d-514726103c7f" />
 
 ## Result:
+verified and executed succesfully
